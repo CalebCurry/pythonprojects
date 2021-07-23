@@ -4,7 +4,6 @@ from discord_slash import SlashCommand
 from discord_slash.utils.manage_commands import create_option
 import os
 
-
 intents = discord.Intents.default()
 
 bot = commands.Bot(command_prefix='!', intents=intents)
