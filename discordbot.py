@@ -2,6 +2,8 @@ import discord
 from discord.ext import commands
 from discord_slash import SlashCommand
 from discord_slash.utils.manage_commands import create_option
+import os
+
 
 intents = discord.Intents.default()
 
@@ -63,4 +65,4 @@ async def price(ctx, symbol: str):
     await ctx.send(price)
 
 
-bot.run('ODY3NzM5OTc5ODg2NzU1ODYx.YPlf1Q.WjLC8N_0qJajElqMeZaUkFf2Ch8')
+bot.run(os.environ.get('BOT'))
